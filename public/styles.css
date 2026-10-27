@@ -74,7 +74,8 @@ a:hover{color:var(--accent-hover)}
 .nav-links a:not(.btn):hover{color:#fff}
 
 /* Hero */
-.hero{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:center;gap:64px;padding-block:48px 64px;overflow-x:clip}
+.hero{display:flex;flex-wrap:wrap;align-items:flex-start;align-content:center;justify-content:center;gap:64px;padding-block:48px 64px;overflow-x:clip}
+@media (min-width:901px) and (min-height:600px){.hero{min-height:calc(100vh - 78px);min-height:calc(100svh - 78px)}}
 .hero-photo{position:relative;flex:0 1 340px;min-width:0;display:flex;justify-content:center}
 .glow{position:absolute;top:50%;left:50%;width:560px;height:560px;max-width:130%;border-radius:50%;background:radial-gradient(circle,rgba(47,107,255,.55) 0%,rgba(47,107,255,.14) 45%,rgba(4,9,26,0) 70%);transform:translate(-50%,-50%)}
 .portrait{position:relative;width:100%;max-width:340px;display:flex;flex-direction:column;align-items:center}
@@ -88,7 +89,8 @@ a:hover{color:var(--accent-hover)}
 .hero h1{font-family:var(--display);font-weight:400;font-size:clamp(44px,5.3vw,78px);line-height:.95;text-transform:uppercase;color:#fff;text-wrap:balance}
 .fit{display:block;white-space:nowrap}
 .hero h1 .fit-1{font-size:15.17cqi;line-height:.92;color:#fff}
-.hero h1 .fit-2{font-size:8.99cqi;line-height:1.02;color:var(--accent)}
+.hero h1 .fit-2{font-size:8.88cqi;line-height:1.02;color:#fff}
+.hero h1 .hl{color:var(--accent)}
 .hero-sub.fit-3{font-size:6.3cqi;line-height:1.1}
 .slash{height:6px;width:100%;margin:20px 0 18px;background:var(--accent);border-radius:2px}
 .hero-sub{font-family:var(--display);font-size:clamp(28px,3.4vw,48px);line-height:1.05;text-transform:uppercase;color:#fff}
