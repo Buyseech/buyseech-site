@@ -117,7 +117,11 @@ a:hover{color:var(--accent-hover)}
 /* Speaking */
 .speaking{padding-block:var(--sec)}
 .talks{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
-.talk{background:var(--bg-card);border:1px solid var(--line-card);border-top:4px solid var(--accent);border-radius:6px;padding:32px 28px}
+.talk{display:flex;flex-direction:column;background:var(--bg-card);border:1px solid var(--line-card);border-top:4px solid var(--accent);border-radius:6px;overflow:hidden}
+.talk-media{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-bottom:1px solid var(--line-card)}
+.talk-media--word{display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 60%,rgba(47,107,255,.28) 0%,rgba(10,20,48,0) 70%),#0B1738;overflow:hidden}
+.talk-media--word span{font-family:var(--display);font-size:clamp(56px,7vw,96px);line-height:1;text-transform:uppercase;color:#14265A;letter-spacing:1px}
+.talk-body{padding:24px 28px 28px}
 .talk .kicker{font-size:15px;letter-spacing:2px;color:var(--accent)}
 .talk h3{margin:4px 0;font-family:var(--display);font-weight:400;font-size:30px;line-height:1.05;text-transform:uppercase}
 .talk p:last-child{font-size:16px;color:var(--mute)}
