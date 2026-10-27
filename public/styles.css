@@ -5,6 +5,7 @@
 @font-face{font-family:"Barlow";font-style:normal;font-weight:400;font-display:swap;src:url("assets/fonts/barlow-latin-400-normal.woff2") format("woff2")}
 @font-face{font-family:"Barlow";font-style:normal;font-weight:600;font-display:swap;src:url("assets/fonts/barlow-latin-600-normal.woff2") format("woff2")}
 @font-face{font-family:"Barlow Condensed";font-style:normal;font-weight:700;font-display:swap;src:url("assets/fonts/barlow-condensed-latin-700-normal.woff2") format("woff2")}
+@font-face{font-family:"Barlow Condensed";font-style:italic;font-weight:700;font-display:swap;src:url("assets/fonts/barlow-condensed-latin-700-italic.woff2") format("woff2")}
 
 :root{
   --bg:#04091A;
@@ -91,7 +92,7 @@ a:hover{color:var(--accent-hover)}
 .hero h1 .fit-1{font-size:15.17cqi;line-height:.92;color:#fff}
 .hero h1 .fit-2{font-size:8.88cqi;line-height:1.02;color:#fff}
 .hero h1 .hl{color:var(--accent)}
-.hero-sub.fit-3{font-size:6.3cqi;line-height:1.1}
+.hero-sub.fit-3{font-size:6.38cqi;line-height:1.1}
 .slash{height:6px;width:100%;margin:20px 0 18px;background:var(--accent);border-radius:2px}
 .hero-sub{font-family:var(--display);font-size:clamp(28px,3.4vw,48px);line-height:1.05;text-transform:uppercase;color:#fff}
 .lede{margin-top:24px;font-size:20px;color:var(--soft);text-align:justify;hyphens:auto}
@@ -216,3 +217,4 @@ a:hover{color:var(--accent-hover)}
 }
 .talk-media--top{object-position:50% 0}
 @media (min-width:1100px){.lede{text-align-last:justify}}
+.hero-sub.fit-3{font-family:var(--cond);font-style:italic;font-weight:700;letter-spacing:0}
