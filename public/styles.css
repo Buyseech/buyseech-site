@@ -82,14 +82,19 @@ a:hover{color:var(--accent-hover)}
 .portrait figcaption{position:relative;margin-top:-36px;background:var(--bg);border:2px solid var(--accent);border-radius:4px;padding:10px 22px;text-align:center}
 .portrait .name{display:block;font-family:var(--display);font-size:24px;line-height:1.1;text-transform:uppercase;color:#fff}
 .portrait .role{display:block;font-size:15px;color:var(--mute)}
-.hero-copy{position:relative;z-index:2;flex:1 1 480px;min-width:0}
+.hero-copy{position:relative;z-index:2;flex:1 1 480px;min-width:0;container-type:inline-size}
 .hero-copy .eyebrow{margin-bottom:20px}
+.eyebrow--spread{display:flex;justify-content:space-between;gap:8px;letter-spacing:2px}
 .hero h1{font-family:var(--display);font-weight:400;font-size:clamp(44px,5.3vw,78px);line-height:.95;text-transform:uppercase;color:#fff;text-wrap:balance}
-.hero h1 span{color:var(--accent)}
-.slash{height:6px;width:72%;margin:22px 0 18px;background:var(--accent);border-radius:2px;transform:skewX(-20deg)}
+.fit{display:block;white-space:nowrap}
+.hero h1 .fit-1{font-size:15.17cqi;line-height:.92;color:#fff}
+.hero h1 .fit-2{font-size:8.99cqi;line-height:1.02;color:var(--accent)}
+.hero-sub.fit-3{font-size:4.65cqi;line-height:1.1}
+.slash{height:6px;width:100%;margin:20px 0 18px;background:var(--accent);border-radius:2px}
 .hero-sub{font-family:var(--display);font-size:clamp(28px,3.4vw,48px);line-height:1.05;text-transform:uppercase;color:#fff}
-.lede{max-width:580px;margin-top:28px;font-size:20px;color:var(--soft)}
-.cta-row{display:flex;flex-wrap:wrap;gap:16px;margin-top:36px}
+.lede{margin-top:24px;font-size:20px;color:var(--soft);text-align:justify;hyphens:auto}
+.cta-row{display:flex;flex-wrap:wrap;gap:16px;margin-top:32px}
+.cta-row .btn{flex:1 1 220px}
 
 /* Proof strip */
 .proof-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px;padding-block:40px}
@@ -197,6 +202,9 @@ a:hover{color:var(--accent-hover)}
 @media (max-width:700px){
   .hero{gap:40px;padding-block:40px 56px}
   .portrait{max-width:300px}
+  .eyebrow--spread{flex-wrap:wrap;justify-content:flex-start;letter-spacing:1.5px}
+  .lede{text-align:left}
+  .hero-sub.fit-3{white-space:normal;font-size:28px}
   .banner img{aspect-ratio:2.4/1;object-position:65% 50%}
   .seal{top:-6px;bottom:auto;right:-4px;width:88px;height:88px}
   .seal b{font-size:36px}
