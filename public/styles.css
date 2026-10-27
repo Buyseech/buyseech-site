@@ -203,3 +203,4 @@ a:hover{color:var(--accent-hover)}
   .form{padding:24px}
   .challenge-grid{gap:48px}
 }
+.talk-media--top{object-position:50% 0}
