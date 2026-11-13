@@ -108,7 +108,7 @@ a:hover{color:var(--accent-hover)}
 .stat-l{margin-top:8px;font-size:16px;color:var(--soft)}
 
 /* Blue band (numbers) */
-.band--blue{background:var(--blue-band);border-color:var(--blue-band)}
+.band--blue{background:var(--bg-form);border-color:var(--line-card)}
 .band--blue .stat-l{color:#E6ECFF}
 .proof-grid > div{text-align:center}
 .proof-grid .stat-l{max-width:260px;margin-inline:auto}
