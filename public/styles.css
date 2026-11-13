@@ -256,3 +256,25 @@ a:hover{color:var(--accent-hover)}
 }
 .talk-media--top{object-position:50% 0}
 .hero-sub.fit-3{font-family:var(--cond);font-style:italic;font-weight:700;letter-spacing:0}
+
+/* ===== Contained layout (trial: header + hero) =====
+   Content sits in rounded panels over a deep blue page with a soft glow that stays fixed while scrolling. */
+html{background:#030716}
+body{background:transparent}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:
+  radial-gradient(1100px 760px at 12% 8%,rgba(59,120,255,.24),transparent 62%),
+  radial-gradient(900px 700px at 92% 78%,rgba(26,71,201,.20),transparent 60%),
+  #030716}
+.site-header{top:12px;background:transparent;-webkit-backdrop-filter:none;backdrop-filter:none;border-bottom:0;padding:12px 16px 0}
+.site-header .nav{max-width:1240px;padding:12px 14px 12px 28px;background:rgba(11,24,64,.82);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border:1px solid var(--line-card);border-radius:20px;box-shadow:0 16px 40px rgba(0,0,0,.35)}
+.site-header .nav .btn--sm{border-radius:12px}
+.hero{width:calc(100% - 32px);max-width:1240px;margin:28px auto 28px;padding:56px 48px 64px;background:linear-gradient(180deg,#0C1A48 0%,#08133A 100%);border:1px solid var(--line-card);border-radius:28px;box-shadow:0 30px 80px rgba(0,0,0,.35);overflow:hidden}
+@media (min-width:901px) and (min-height:600px){.hero{min-height:calc(100vh - 140px);min-height:calc(100svh - 140px)}}
+.portrait figcaption{background:#08133A}
+@media (max-width:700px){
+  .site-header{padding:8px 10px 0;top:8px}
+  .site-header .nav{flex-wrap:nowrap;padding:8px 8px 8px 16px;border-radius:16px}
+  .site-header .logo{font-size:24px}
+  .site-header .nav .btn--sm{font-size:14px;padding:8px 12px;min-height:40px;white-space:nowrap}
+  .hero{width:calc(100% - 20px);margin:16px auto 16px;padding:36px 20px 44px;border-radius:22px}
+}
