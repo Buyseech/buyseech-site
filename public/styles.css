@@ -129,7 +129,7 @@ a:hover{color:var(--accent-hover)}
 .scale-n{font-family:var(--display);font-size:64px;line-height:1;color:#fff}
 .scale-n.is-accent{color:var(--accent)}
 .scale-l{margin:12px auto 0;font-size:18px;text-wrap:balance;font-weight:700;line-height:1.4;color:#fff}
-.scale-x{margin-top:6px;font-family:var(--cond);font-style:italic;font-weight:700;font-size:22px;line-height:1.25;letter-spacing:.3px;color:var(--label);text-wrap:balance}
+.scale-x{margin-top:6px;font-family:var(--cond);font-style:italic;font-weight:700;font-size:22px;line-height:1.25;letter-spacing:.3px;color:var(--accent);text-wrap:balance}
 
 /* How we work: full stack */
 .stack{display:flex;flex-wrap:wrap;gap:48px 72px;padding-block:var(--sec)}
