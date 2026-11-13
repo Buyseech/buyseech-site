@@ -107,17 +107,11 @@ a:hover{color:var(--accent-hover)}
 .stat-n.is-accent{color:var(--accent)}
 .stat-l{margin-top:8px;font-size:16px;color:var(--soft)}
 
-/* Logo strip */
-.logos{background:#F3F6FD;color:#0B1430}
-.logos-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:28px 48px;padding-block:32px}
-.logo-group{display:flex;flex-wrap:wrap;align-items:center;gap:18px 28px}
-.logo-label{font-family:var(--cond);font-weight:700;font-size:15px;letter-spacing:2px;text-transform:uppercase;color:var(--blue-band)}
-.logo-group img{display:block;width:auto;mix-blend-mode:multiply}
-.lg-l{height:46px}.lg-m{height:38px}.lg-s{height:30px}.lg-xs{height:25px}
-
 /* Blue band (numbers) */
 .band--blue{background:var(--blue-band);border-color:var(--blue-band)}
 .band--blue .stat-l{color:#E6ECFF}
+.proof-grid > div{text-align:center}
+.proof-grid .stat-l{max-width:260px;margin-inline:auto}
 .band--blue .stat-n{font-size:60px}
 
 /* Who we help: hard markets */
@@ -257,9 +251,6 @@ a:hover{color:var(--accent-hover)}
   .seal span{font-size:13px}
   .form{padding:24px}
   .challenge-grid{gap:48px}
-  .logos-row{justify-content:center}
-  .logo-group{justify-content:center}
-  .lg-l{height:38px}.lg-m{height:32px}.lg-s{height:26px}.lg-xs{height:22px}
   .statement-row{padding-block:64px}
   .stack-list strong{font-size:26px}
 }
