@@ -7,7 +7,7 @@ One-page static site. No build step: Cloudflare serves the files in `public/` as
 - `public/index.html`: the whole page (hero, logo strip, numbers, who we help, how we work, "judged on results" band, speaking, 2018 win, Unscripted SEO, review form)
 - `public/styles.css`: all styling. The accent colour is `--accent` at the top.
 - `public/site.js`: scroll-in animation for sections (`.reveal`) and review form handling
-- `public/assets/`: images and self-hosted fonts (no Google Fonts requests)
+- `public/assets/`: images and self-hosted fonts (Manrope body text, Anton headlines, Barlow Condensed labels; no Google Fonts requests)
 - `public/404.html`, `robots.txt`, `sitemap.xml`, `_headers`: standard site files
 - `wrangler.jsonc`: tells Cloudflare to publish the `public/` folder
 

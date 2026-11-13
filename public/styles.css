@@ -1,9 +1,10 @@
-/* Buyseech.com: one-page site. Dark blue, Anton headlines, Barlow body.
+/* Buyseech.com: one-page site. Dark blue, Anton headlines, Manrope body text, Barlow Condensed labels and buttons.
    Change the accent colour in one place: --accent below. */
 
 @font-face{font-family:"Anton";font-style:normal;font-weight:400;font-display:swap;src:url("assets/fonts/anton-latin-400-normal.woff2") format("woff2")}
-@font-face{font-family:"Barlow";font-style:normal;font-weight:400;font-display:swap;src:url("assets/fonts/barlow-latin-400-normal.woff2") format("woff2")}
-@font-face{font-family:"Barlow";font-style:normal;font-weight:600;font-display:swap;src:url("assets/fonts/barlow-latin-600-normal.woff2") format("woff2")}
+@font-face{font-family:"Manrope";font-style:normal;font-weight:400;font-display:swap;src:url("assets/fonts/manrope-latin-400-normal.woff2") format("woff2")}
+@font-face{font-family:"Manrope";font-style:normal;font-weight:600;font-display:swap;src:url("assets/fonts/manrope-latin-600-normal.woff2") format("woff2")}
+@font-face{font-family:"Manrope";font-style:normal;font-weight:700;font-display:swap;src:url("assets/fonts/manrope-latin-700-normal.woff2") format("woff2")}
 @font-face{font-family:"Barlow Condensed";font-style:normal;font-weight:700;font-display:swap;src:url("assets/fonts/barlow-condensed-latin-700-normal.woff2") format("woff2")}
 @font-face{font-family:"Barlow Condensed";font-style:italic;font-weight:700;font-display:swap;src:url("assets/fonts/barlow-condensed-latin-700-italic.woff2") format("woff2")}
 
@@ -25,7 +26,7 @@
   --accent:#FFC107;
   --accent-hover:#FFD54F;
   --display:"Anton",Impact,"Arial Narrow",sans-serif;
-  --body:"Barlow",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --body:"Manrope",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
   --cond:"Barlow Condensed","Arial Narrow",sans-serif;
   --sec:clamp(64px,9vw,112px);
   color-scheme:dark;
@@ -263,5 +264,4 @@ a:hover{color:var(--accent-hover)}
   .stack-list strong{font-size:26px}
 }
 .talk-media--top{object-position:50% 0}
-@media (min-width:1100px){.lede{text-align-last:justify}}
 .hero-sub.fit-3{font-family:var(--cond);font-style:italic;font-weight:700;letter-spacing:0}
