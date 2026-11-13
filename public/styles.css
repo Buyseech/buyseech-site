@@ -131,16 +131,18 @@ a:hover{color:var(--accent-hover)}
 .scale-l{margin:12px auto 0;font-size:18px;text-wrap:balance;font-weight:700;line-height:1.4;color:#fff}
 .scale-x{margin-top:6px;font-family:var(--cond);font-style:italic;font-weight:700;font-size:22px;line-height:1.25;letter-spacing:.3px;color:var(--accent);text-wrap:balance}
 
-/* How we work: full stack */
-.stack{display:flex;flex-wrap:wrap;gap:48px 72px;padding-block:var(--sec)}
-.stack > div{flex:1 1 380px;min-width:0}
-.stack .eyebrow{margin-bottom:16px}
-.stack-list{flex:1 1 560px;min-width:0;list-style:none;margin:0;padding:0}
-.stack-list li{display:flex;gap:24px;align-items:baseline;padding:22px 0;border-bottom:1px solid var(--line-card)}
-.stack-list li:last-child{border-bottom:0}
-.stack-n{min-width:36px;font-family:var(--display);font-size:22px;color:var(--accent)}
-.stack-list strong{display:block;font-family:var(--display);font-weight:400;font-size:30px;line-height:1.1;text-transform:uppercase;color:#fff}
-.stack-list li > span:last-child{font-size:17px;color:var(--soft)}
+/* Our SEO toolbox: centred title, five cards */
+.toolbox{padding-block:var(--sec)}
+.toolbox-head{text-align:center;margin-bottom:64px}
+.toolbox-head .eyebrow{margin-bottom:16px}
+.toolbox-head .h2{line-height:.98}
+.tools{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:20px}
+.tools li{flex:0 1 calc((100% - 80px)/5);min-width:0;background:var(--bg-card);border:1px solid var(--line-card);border-top:4px solid var(--accent);border-radius:8px;padding:28px 24px;text-align:center}
+.tool-n{display:block;margin-bottom:16px;font-family:var(--display);font-size:44px;line-height:1;color:var(--accent)}
+.tools h3{min-height:2.16em;display:flex;align-items:center;justify-content:center;margin:0 0 12px;font-family:var(--display);font-weight:400;font-size:24px;line-height:1.08;text-transform:uppercase;text-wrap:balance;color:#fff}
+.tools p{font-size:17px;line-height:1.5;color:var(--soft)}
+@media (max-width:1100px){.tools li{flex-basis:calc((100% - 20px)/2)}}
+@media (max-width:640px){.tools li{flex-basis:100%}.tools h3{min-height:0}.toolbox-head{margin-bottom:40px}}
 
 /* Statement band */
 .statement{background:var(--accent);color:var(--bg)}
@@ -253,7 +255,6 @@ a:hover{color:var(--accent-hover)}
   .form{padding:24px}
   .challenge-grid{gap:48px}
   .statement-row{padding-block:64px}
-  .stack-list strong{font-size:26px}
 }
 .talk-media--top{object-position:50% 0}
 .hero-sub.fit-3{font-family:var(--cond);font-style:italic;font-weight:700;letter-spacing:0}
