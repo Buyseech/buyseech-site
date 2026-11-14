@@ -251,6 +251,12 @@ a:hover{color:var(--accent-hover)}
 @media (max-width:900px){
   .nav-links a:not(.btn){display:none}
   .hero-photo{flex-basis:100%}
+  .nav{flex-wrap:nowrap;gap:12px;padding-block:12px}
+  .nav-links{flex-wrap:nowrap}
+}
+@media (max-width:480px){
+  .logo{font-size:24px}
+  .nav .btn--sm{font-size:14px;padding:9px 12px;letter-spacing:.5px;white-space:nowrap}
 }
 @media (max-width:700px){
   .hero{gap:40px;padding-block:40px 56px}
