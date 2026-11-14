@@ -1,3 +1,40 @@
+// Phones: make the first screen end cleanly after "Not the last step. Not an afterthought."
+// The portrait is resized to the visible screen height and the paragraph starts just below the fold,
+// so no half-visible text peeks in at the bottom. Measured once per width (not on scroll-bar resizes).
+(function () {
+  var photo = document.querySelector('.portrait');
+  var sub = document.querySelector('.hero-sub');
+  var lede = document.querySelector('.lede');
+  var hero = document.querySelector('.hero');
+  if (!photo || !sub || !lede || !hero) return;
+  function pageTop(el) { var t = 0; while (el) { t += el.offsetTop; el = el.offsetParent; } return t; }
+  function subBottom() { return pageTop(sub) + sub.offsetHeight; }
+  var lastW = 0;
+  function fit() {
+    var w = window.innerWidth;
+    if (w === lastW) return;
+    lastW = w;
+    photo.style.maxWidth = '';
+    lede.style.marginTop = '';
+    hero.style.paddingTop = '';
+    if (w > 700) return;
+    var vh = window.innerHeight;
+    var maxSize = Math.min(photo.parentNode.clientWidth, 380);
+    var size = photo.offsetWidth;
+    var target = Math.max(170, Math.min(maxSize, size - (subBottom() - (vh - 20))));
+    photo.style.maxWidth = target + 'px';
+    var gap = vh - 20 - subBottom();
+    if (gap > 0) {
+      var basePad = parseFloat(getComputedStyle(hero).paddingTop) || 0;
+      hero.style.paddingTop = (basePad + gap / 2) + 'px';
+    }
+    var below = vh - subBottom();
+    if (below > 0) lede.style.marginTop = (below + 16) + 'px';
+  }
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit); else fit();
+  window.addEventListener('resize', fit);
+})();
+
 // Scroll reveal: sections below the fold fade and rise gently into view.
 // Anything already on screen is never hidden, and nothing is hidden without JavaScript
 // or for visitors who ask their device to reduce motion.
