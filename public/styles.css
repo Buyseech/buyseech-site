@@ -160,6 +160,9 @@ a:hover{color:var(--accent-hover)}
 /* Speaking */
 .speaking{padding-block:var(--sec)}
 .speak-head{text-align:center;margin-bottom:56px}
+.speak-head .h2{container-type:inline-size}
+.speak-head .h2 .ln,.speak-head .h2 .yl{display:block;white-space:nowrap;font-size:min(11.1cqi,clamp(38px,5vw,76px))}
+.speak-head .h2 .ln{color:inherit}
 .speak-head .eyebrow{margin-bottom:16px}
 .speak-head > p:last-child{max-width:720px;margin:24px auto 0;font-size:20px;color:var(--soft)}
 .talks{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
