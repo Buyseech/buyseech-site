@@ -106,3 +106,21 @@
   window.addEventListener('resize', setOffset);
   window.addEventListener('load', setOffset);
 })();
+
+// Phone menu: the three-line button opens the section links; picking one (or Escape) closes it.
+(function () {
+  var header = document.querySelector('.site-header');
+  var btn = document.querySelector('.nav-toggle');
+  var menu = document.getElementById('mobile-menu');
+  if (!header || !btn || !menu) return;
+  function set(open) {
+    menu.hidden = !open;
+    header.classList.toggle('menu-open', open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  }
+  btn.addEventListener('click', function () { set(menu.hidden); });
+  menu.addEventListener('click', function (e) { if (e.target.closest('a')) set(false); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') set(false); });
+  window.addEventListener('resize', function () { if (window.innerWidth > 900) set(false); });
+})();

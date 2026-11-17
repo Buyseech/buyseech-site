@@ -25,7 +25,7 @@
 
 <link rel="preload" href="assets/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/manrope-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="styles.css?v=5.3">
+<link rel="stylesheet" href="styles.css?v=5.4">
 
 <script type="application/ld+json">
 {
@@ -67,8 +67,16 @@
       <a href="#people">Our team</a>
       <a href="#unscripted">YouTube &amp; Podcast</a>
       <a class="btn btn--sm" href="#review">We need more customers</a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
     </div>
   </nav>
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <a href="#who">Who we help</a>
+    <a href="#services">How we work</a>
+    <a href="#results">Results</a>
+    <a href="#people">Our team</a>
+    <a href="#unscripted">YouTube &amp; Podcast</a>
+  </div>
 </header>
 
 <main id="main">
@@ -88,7 +96,7 @@
     <div class="hero-copy">
       <h1><span class="fit fit-1"><span class="hl">Conversions from SEO</span></span> <span class="fit fit-2">are our first and main priority.</span></h1>
       <div class="slash" aria-hidden="true"></div>
-      <p class="hero-sub fit fit-3">Not the last step. Not an afterthought.</p>
+      <p class="hero-sub fit fit-3"><span>Not the last step.</span> <span>Not an afterthought.</span></p>
       <p class="lede">No vanity metrics. No 40-page SEO reports nobody reads. We care about one thing: your bottom line. <strong class="hl-y">More leads</strong>, <strong class="hl-y">more orders</strong>, <strong class="hl-y">more revenue</strong>, in every country and language you sell in. Nothing else counts. Period.</p>
       <div class="cta-row">
         <a class="btn" href="#review">We need more customers</a>
@@ -426,6 +434,6 @@
   </div>
 </footer>
 
-<script src="site.js?v=4.1" defer></script>
+<script src="site.js?v=4.2" defer></script>
 </body>
 </html>
