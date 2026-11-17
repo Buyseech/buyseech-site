@@ -199,6 +199,29 @@ a:hover{color:var(--accent-hover)}
 .seal b{font-family:var(--display);font-weight:400;font-size:52px;line-height:1}
 .seal span{font-family:var(--cond);font-weight:700;font-size:15px;letter-spacing:2px}
 
+/* People */
+.people{padding-block:var(--sec)}
+.people-head{text-align:center;margin-bottom:56px}
+.people-head .eyebrow{margin-bottom:12px}
+.people-head .h2{container-type:inline-size}
+.people-head .h2 .ln,.people-head .h2 .yl{display:block;white-space:nowrap;font-size:min(10.6cqi,clamp(38px,5vw,76px))}
+.people-head .h2 .ln{color:inherit}
+.star{color:var(--accent)}
+.people-head .h2 .yl{position:relative}
+.people-head .star{position:absolute;top:.05em;margin-left:.06em;font-size:.5em;line-height:1}
+.people-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.person{display:flex;gap:28px;align-items:flex-start;background:var(--bg-card);border:1px solid var(--line-card);border-left:4px solid var(--accent);border-radius:8px;padding:32px}
+.person img{display:block;width:150px;height:auto;flex:none;aspect-ratio:1/1;object-fit:cover;border-radius:50%;border:4px solid var(--blue)}
+.person p{margin:0}
+.person .nick{margin-bottom:6px;font-family:var(--cond);font-weight:700;font-style:italic;font-size:22px;color:var(--accent);text-transform:uppercase;letter-spacing:.5px}
+.person h3{margin:0;font-family:var(--display);font-weight:400;font-size:34px;line-height:1.05;text-transform:uppercase;color:#fff}
+.person .title{margin-top:6px;font-family:var(--cond);font-weight:700;font-size:17px;letter-spacing:1.5px;text-transform:uppercase;color:var(--label)}
+.person .bio{margin-top:16px;font-size:18px;color:var(--soft)}
+.people-note{max-width:760px;margin:40px auto 0;text-align:center;font-size:18px;font-style:italic;color:var(--soft)}
+.people-note .star{font-style:normal;font-weight:700;margin-right:2px}
+@media (max-width:1100px){.person{flex-direction:column;align-items:center;text-align:center}}
+@media (max-width:900px){.people-grid{grid-template-columns:1fr}.person{padding:28px 22px}.people-head{margin-bottom:40px}.people-note{font-size:16px;margin-top:28px}}
+
 /* Unscripted SEO */
 .unscripted{padding-block:var(--sec)}
 .unscripted .head{text-align:center;margin-bottom:40px}
