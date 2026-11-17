@@ -204,6 +204,7 @@ a:hover{color:var(--accent-hover)}
 .unscripted .head{display:flex;flex-wrap:wrap;gap:32px 40px;align-items:flex-end;justify-content:space-between;margin-bottom:48px}
 .unscripted .head > div:first-child{flex:1 1 560px;min-width:0}
 .unscripted .eyebrow{margin-bottom:12px}
+@media (min-width:901px){.unscripted .head > div:first-child{container-type:inline-size}.unscripted .h2{white-space:nowrap;font-size:min(6.4cqi,clamp(38px,5vw,76px))}}
 .unscripted .head p:last-child{max-width:600px;margin-top:20px;font-size:20px;color:var(--soft)}
 .banner{display:block}
 .banner img{display:block;width:100%;aspect-ratio:1707/282;object-fit:cover;border:1px solid var(--line-form);border-radius:6px}
