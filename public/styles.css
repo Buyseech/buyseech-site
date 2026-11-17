@@ -74,6 +74,8 @@ a:hover{color:var(--accent-hover)}
 .logo span{color:var(--accent)}
 .nav-links{display:flex;flex-wrap:wrap;align-items:center;gap:28px;font-family:var(--cond);font-weight:700;font-size:17px;letter-spacing:1px;text-transform:uppercase}
 .nav-links a:not(.btn){color:var(--soft)}
+@media (min-width:901px) and (max-width:1150px){.nav-links{gap:18px;font-size:15.5px}}
+@media (min-width:901px) and (max-width:1000px){.nav-links{gap:13px;font-size:14px;letter-spacing:.5px}.nav-links .btn{padding-inline:14px}}
 .nav-links a:not(.btn):hover{color:#fff}
 
 /* Hero */
