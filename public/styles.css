@@ -298,7 +298,12 @@ a:hover{color:var(--accent-hover)}
 .banner:hover{transform:translateY(-3px)}
 .banner img{display:block;width:100%;aspect-ratio:1707/282;object-fit:cover;border:1px solid var(--line-form);border-bottom:0;border-radius:6px 6px 0 0}
 .banner-cta{display:block;text-align:center;background:var(--accent);color:#0a1238;font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:1px;font-size:22px;padding:14px;border-radius:0 0 6px 6px}
-@media (max-width:900px){.banner-cta{font-size:16px;padding:11px}}
+.banner{position:relative}
+.banner-play{position:absolute;right:9%;top:calc((100% - 52px)/2);transform:translateY(-50%);line-height:0}
+.banner-play .yt-play{width:96px;height:auto;filter:drop-shadow(0 6px 18px rgba(255,0,0,.45));transition:transform .2s}
+.banner:hover .banner-play .yt-play{transform:scale(1.1)}
+.banner-cta-icon{display:none}
+@media (max-width:900px){.banner-cta{font-size:16px;padding:11px;display:flex;align-items:center;justify-content:center;gap:10px}.banner-play{display:none}.banner-cta-icon{display:block;line-height:0}.banner-cta-icon .yt-play{width:26px;height:auto}}
 
 /* Review form */
 .review{position:relative;overflow:hidden;background:var(--bg-form)}
