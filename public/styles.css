@@ -215,6 +215,10 @@ a:hover{color:var(--accent-hover)}
 .review-grid{position:relative;display:flex;flex-wrap:wrap;gap:56px;align-items:center;padding-block:var(--sec)}
 .review-copy{flex:1 1 480px;min-width:0}
 .review-copy .h2{font-size:clamp(42px,5.4vw,84px);line-height:.98}
+.review-copy .h2{container-type:inline-size}
+.review-copy .h2 .ln,.review-copy .h2 .yl{display:block;white-space:nowrap}
+.review-copy .h2 .ln{color:inherit;font-size:9.9cqi}
+.review-copy .h2 .yl{color:var(--accent);font-size:17.8cqi;line-height:.95;margin-top:.04em}
 .review-copy p{max-width:520px;margin-top:28px;font-size:20px;color:var(--soft)}
 .review-copy p.alt{margin-top:20px;font-size:17px;color:var(--mute)}
 .form{flex:1 1 420px;min-width:0;display:flex;flex-direction:column;gap:18px;background:var(--bg);border:1px solid var(--line-form);border-radius:8px;padding:36px;box-shadow:0 30px 80px rgba(0,0,0,.45)}
