@@ -94,3 +94,15 @@
       });
   });
 })();
+
+// Jump links: land each section exactly under the sticky header (no gap), on every screen size.
+(function () {
+  var header = document.querySelector('.site-header');
+  if (!header) return;
+  function setOffset() {
+    document.documentElement.style.scrollPaddingTop = header.getBoundingClientRect().height + 'px';
+  }
+  setOffset();
+  window.addEventListener('resize', setOffset);
+  window.addEventListener('load', setOffset);
+})();
