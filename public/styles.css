@@ -98,8 +98,8 @@ a:hover{color:var(--accent-hover)}
 .slash{height:6px;width:100%;margin:20px 0 18px;background:var(--accent);border-radius:2px}
 .hero-sub{font-family:var(--display);font-size:clamp(28px,3.4vw,48px);line-height:1.05;text-transform:uppercase;color:#fff}
 .lede{margin-top:24px;font-size:20px;color:var(--soft);text-align:justify;hyphens:auto}
-.cta-row{display:flex;flex-wrap:wrap;gap:16px;margin-top:32px}
-.cta-row .btn{flex:1 1 220px}
+.cta-row{display:flex;justify-content:center;margin-top:32px}
+.cta-row .btn{flex:none;min-width:300px}
 
 /* Proof strip */
 .proof-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px;padding-block:40px}
