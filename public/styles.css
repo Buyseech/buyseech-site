@@ -318,7 +318,10 @@ a:hover{color:var(--accent-hover)}
 .review-copy .h2 .ln{color:inherit;font-size:9.9cqi}
 .review-copy .h2 .yl{color:var(--accent);font-size:17.8cqi;line-height:.95;margin-top:.04em}
 .review-copy p{max-width:none;margin-top:28px;font-size:20px;color:var(--soft)}
-.review-copy p.alt{margin-top:20px;font-size:17px;color:var(--mute)}
+.form-col{flex:1 1 420px;min-width:0}
+.form-col .form{width:100%}
+.alt-below{margin:22px 0 0;text-align:center;font-size:17px;color:var(--mute)}
+.alt-below a{font-weight:600}
 .form{flex:1 1 420px;min-width:0;display:flex;flex-direction:column;gap:18px;background:var(--bg);border:1px solid var(--line-form);border-radius:8px;padding:36px;box-shadow:0 30px 80px rgba(0,0,0,.45)}
 .form label{display:flex;flex-direction:column;gap:8px;font-family:var(--cond);font-weight:700;font-size:16px;letter-spacing:1px;text-transform:uppercase;color:var(--soft)}
 .form input[type=text],.form input[type=email]{width:100%;min-height:48px;background:var(--bg-card);border:1px solid var(--line-form);border-radius:4px;color:#fff;font-family:var(--body);font-size:18px;letter-spacing:normal;text-transform:none;padding:14px 16px}
@@ -333,11 +336,15 @@ a:hover{color:var(--accent-hover)}
 
 /* Footer */
 .site-footer{border-top:1px solid var(--line)}
-.footer-row{display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between;padding-block:40px;font-size:15px;color:var(--dim)}
-.footer-logo{font-family:var(--display);font-size:22px;color:#fff}
+.footer-in{padding-block:44px 28px}
+.footer-top{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-bottom:24px;border-bottom:1px solid var(--line)}
+.footer-copy{margin:20px 0 0;text-align:center;font-size:14px;color:var(--mute)}
+.footer-logo{font-family:var(--display);font-size:28px;color:#fff}
 .footer-logo span{color:var(--accent)}
-.footer-links{display:flex;flex-wrap:wrap;gap:24px}
-.footer-links a{color:var(--soft)}
+.footer-links{display:flex;gap:28px}
+.footer-links a{display:flex;align-items:center;gap:8px;color:var(--soft);font-size:17px}
+.footer-links svg{color:var(--accent);flex:none}
+@media (max-width:700px){.footer-top{flex-direction:column;gap:22px}.footer-links{flex-direction:column;align-items:center;gap:16px}}
 .footer-links a:hover{color:#fff}
 
 /* 404 */
