@@ -87,7 +87,7 @@
         status.textContent = 'Thank you. Igor will look at your site and reply by email.';
       })
       .catch(function () {
-        status.textContent = 'Something went wrong. Please email office@buyseech.com instead.';
+        status.textContent = 'Something went wrong. Please email igor@buyseech.com instead.';
       })
       .then(function () {
         button.disabled = false;

@@ -36,7 +36,7 @@
       "@id": "https://buyseech.com/#org",
       "name": "Buyseech",
       "url": "https://buyseech.com/",
-      "email": "office@buyseech.com",
+      "email": "igor@buyseech.com",
       "founder": { "@id": "https://buyseech.com/#igor" },
       "sameAs": ["https://www.youtube.com/@Buyseech"]
     },
@@ -276,10 +276,10 @@
       <div class="review-copy reveal">
         <h2 id="review-title" class="h2">Where is your site <span>leaking leads?</span></h2>
         <p>Send your website. Igor looks at it personally and tells you, in plain words, what is holding back your leads, conversions and sales in each market, and whether we can help. No pitch deck, no pressure.</p>
-        <p class="alt">Prefer email? <a href="mailto:office@buyseech.com">office@buyseech.com</a></p>
+        <p class="alt">Prefer email? <a href="mailto:igor@buyseech.com">igor@buyseech.com</a></p>
       </div>
       <!-- Without JavaScript, or until a form service is connected (data-endpoint), the form opens the visitor's email app. -->
-      <form id="review-form" class="form reveal"action="mailto:office@buyseech.com?subject=Site%20review%20request" method="post" enctype="text/plain" data-endpoint="">
+      <form id="review-form" class="form reveal" action="mailto:igor@buyseech.com?subject=Site%20review%20request" method="post" enctype="text/plain" data-endpoint="">
         <label>Name
           <input type="text" name="name" placeholder="Your name" autocomplete="name" required>
         </label>
@@ -287,7 +287,7 @@
           <input type="email" name="email" placeholder="you@company.com" autocomplete="email" required>
         </label>
         <label>Website
-          <input type="text" name="website" placeholder="https://yourbrand.com" inputmode="url" autocomplete="url" autocapitalize="none" spellcheck="false" required>
+          <input type="text" name="website" placeholder="https://yourbrand.com" inputmode="url" autocomplete="url" autocapitalize="none" spellcheck="false" required pattern="\s*\S+\.\S+\s*" title="Your website address, e.g. yourbrand.com">
         </label>
         <div class="hp" aria-hidden="true"><label>Leave this empty <input type="text" name="botcheck" tabindex="-1" autocomplete="off"></label></div>
         <button class="btn" type="submit">We need more customers</button>
@@ -303,7 +303,7 @@
   <div class="wrap footer-row">
     <span class="footer-logo">BUYSEECH<span>.</span></span>
     <div class="footer-links">
-      <a href="mailto:office@buyseech.com">office@buyseech.com</a>
+      <a href="mailto:igor@buyseech.com">igor@buyseech.com</a>
       <a href="https://calendly.com/buyseech/30min" target="_blank" rel="noopener">Book a call</a>
       <a href="https://www.youtube.com/@Buyseech" target="_blank" rel="noopener">YouTube</a>
     </div>
@@ -311,6 +311,6 @@
   </div>
 </footer>
 
-<script src="site.js?v=3.9" defer></script>
+<script src="site.js?v=4.0" defer></script>
 </body>
 </html>
