@@ -213,7 +213,7 @@ a:hover{color:var(--accent-hover)}
 .results-head .h2 .ln{color:inherit}
 @media (min-width:901px){.results-head .h2 .ln,.results-head .h2 .yl{display:inline;font-size:min(6.2cqi,clamp(38px,5vw,76px))}.results-head{margin-bottom:56px}}
 .case{display:grid;grid-template-columns:5fr 6fr;gap:24px 64px;align-items:center}
-.case+.case{margin-top:56px;padding-top:56px;border-top:1px solid var(--line-form)}
+.case+.case{margin-top:64px;padding-top:64px;border-top:3px solid var(--accent)}
 .case--flip{grid-template-columns:6fr 5fr}
 .case--flip .case-copy{order:2}
 .case-copy{min-width:0}
