@@ -263,6 +263,7 @@ a:hover{color:var(--accent-hover)}
   .case+.case{margin-top:48px;padding-top:48px}
   .cs-bars{height:220px}.cs-bar{width:34px}
   .cs-two{grid-template-columns:1fr}
+  .case-tags li{flex:1 1 auto;text-align:center}
   .cs-bars{gap:8px}.cs-grp em{font-size:14px}
   .case-wide .ga4-full{display:none}
   .ga4-split{display:grid;gap:12px}
