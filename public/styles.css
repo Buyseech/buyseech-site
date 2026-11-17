@@ -123,7 +123,7 @@ a:hover{color:var(--accent-hover)}
 .markets-top > div:last-child{flex-basis:520px;text-align:center}
 .markets .eyebrow{margin-bottom:16px}
 .h2--xl{font-size:clamp(46px,5.6vw,84px);line-height:.98}
-.markets-lede{margin-bottom:28px;font-size:21px;color:var(--soft)}
+.markets-lede{margin-bottom:28px;font-size:21px;color:var(--soft);text-align:left}
 .chips{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
 .chips li{background:var(--bg-card);border:1px solid var(--line-form);border-radius:999px;padding:9px 18px;font-size:16px;font-weight:600;color:#fff}
 .chips .chip-you{background:var(--accent);border-color:var(--accent);padding:0}
