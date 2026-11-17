@@ -223,7 +223,7 @@ a:hover{color:var(--accent-hover)}
 .case-title{margin:0;font-family:var(--display);font-weight:400;line-height:1;text-transform:uppercase;container-type:inline-size}
 .case-title span{display:block;white-space:nowrap;font-size:min(10.5cqi,56px)}
 .case-title .yl{color:var(--accent)}
-.case-lead{margin:20px 0 0;font-size:19px;color:var(--soft)}
+.case-lead{margin:20px 0 0;font-size:19px;color:var(--soft);text-align:justify;hyphens:auto;-webkit-hyphens:auto}
 .case-tags{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 0;padding:0;list-style:none}
 .case-tags li{border:1px solid var(--accent);color:var(--accent);border-radius:999px;padding:6px 14px;font-family:var(--cond);font-weight:700;font-size:15px;letter-spacing:1px;text-transform:uppercase}
 .case-vis,.case-wide{margin:0;min-width:0}
@@ -263,7 +263,8 @@ a:hover{color:var(--accent-hover)}
   .case+.case{margin-top:48px;padding-top:48px}
   .cs-bars{height:220px}.cs-bar{width:34px}
   .cs-two{grid-template-columns:1fr}
-  .case-tags li{flex:1 1 auto;text-align:center}
+  .case-tags{flex-wrap:nowrap;gap:6px}
+  .case-tags li{flex:1 1 auto;min-width:0;text-align:center;white-space:nowrap;font-size:clamp(11px,3.3vw,14px);letter-spacing:.4px;padding:7px 6px}
   .cs-bars{gap:8px}.cs-grp em{font-size:14px}
   .case-wide .ga4-full{display:none}
   .ga4-split{display:grid;gap:12px}
