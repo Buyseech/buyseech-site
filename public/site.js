@@ -8,7 +8,9 @@
   var hero = document.querySelector('.hero');
   if (!photo || !sub || !lede || !hero) return;
   function pageTop(el) { var t = 0; while (el) { t += el.offsetTop; el = el.offsetParent; } return t; }
-  function subBottom() { return pageTop(sub) + sub.offsetHeight; }
+  var slash = document.querySelector('.hero .slash');
+  // When the line is hidden (phones), measure to the yellow line instead.
+  function subBottom() { var el = (sub.offsetParent || !slash) ? sub : slash; return pageTop(el) + el.offsetHeight; }
   var lastW = 0;
   function fit() {
     var w = window.innerWidth;
