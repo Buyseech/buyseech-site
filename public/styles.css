@@ -411,3 +411,6 @@ a:hover{color:var(--accent-hover)}
 }
 .talk-media--top{object-position:50% 0}
 .hero-sub.fit-3{font-family:var(--cond);font-style:italic;font-weight:700;letter-spacing:0}
+
+/* Mobile: hide the "Not the last step. Not an afterthought." line (desktop keeps it) */
+@media (max-width:900px){.hero-sub.fit-3{display:none}}
