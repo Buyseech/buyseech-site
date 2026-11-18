@@ -87,6 +87,7 @@
         if (!response.ok) throw new Error('HTTP ' + response.status);
         form.reset();
         status.textContent = 'Thank you. Igor will look at your site and reply by email.';
+        if (typeof gtag === 'function') gtag('event', 'generate_lead', { form_name: 'site_review' });
       })
       .catch(function () {
         status.textContent = 'Something went wrong. Please email igor@buyseech.com instead.';
@@ -125,4 +126,25 @@
   menu.addEventListener('click', function (e) { if (e.target.closest('a')) set(false); });
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') set(false); });
   window.addEventListener('resize', function () { if (window.innerWidth > 900) set(false); });
+})();
+
+// Cookie banner (Google Consent Mode v2). Choice is remembered; "Cookie settings" in the footer reopens it.
+(function () {
+  var banner = document.getElementById('cookie-banner');
+  if (!banner) return;
+  var KEY = 'bs-consent';
+  function get() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
+  function set(v) { try { localStorage.setItem(KEY, v); } catch (e) {} }
+  if (!get()) banner.hidden = false;
+  banner.addEventListener('click', function (e) {
+    var b = e.target.closest('[data-consent]');
+    if (!b) return;
+    var v = b.getAttribute('data-consent');
+    set(v);
+    if (typeof gtag === 'function') gtag('consent', 'update', { analytics_storage: v });
+    banner.hidden = true;
+  });
+  document.querySelectorAll('[data-cookie-settings]').forEach(function (el) {
+    el.addEventListener('click', function () { banner.hidden = false; });
+  });
 })();

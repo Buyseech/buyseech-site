@@ -414,3 +414,14 @@ a:hover{color:var(--accent-hover)}
 
 /* Mobile: hide the "Not the last step. Not an afterthought." line (desktop keeps it) */
 @media (max-width:900px){.hero-sub.fit-3{display:none}}
+
+/* Cookie banner */
+.cookie{position:fixed;left:16px;right:16px;bottom:16px;z-index:50;max-width:560px;margin-inline:auto;display:flex;align-items:center;gap:16px 20px;background:var(--bg);border:1px solid var(--line-form);border-left:4px solid var(--accent);border-radius:8px;padding:16px 20px;box-shadow:0 20px 60px rgba(0,0,0,.55)}
+.cookie[hidden]{display:none}
+.cookie p{margin:0;font-size:15px;line-height:1.45;color:var(--soft)}
+.cookie-btns{display:flex;gap:10px;flex:none;align-items:center}
+.cookie-no{background:none;border:0;color:var(--mute);font:inherit;font-size:14px;text-decoration:underline;cursor:pointer;padding:8px 4px}
+.cookie-no:hover{color:#fff}
+.cookie-link{background:none;border:0;padding:0;font:inherit;color:inherit;text-decoration:underline;cursor:pointer}
+.cookie-link:hover{color:#fff}
+@media (max-width:560px){.cookie{flex-direction:column;align-items:stretch;left:12px;right:12px;bottom:12px}.cookie-btns{justify-content:flex-end}}
