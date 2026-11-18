@@ -401,9 +401,12 @@
         <h2 id="review-title" class="h2"><span class="ln">Let’s grow your revenue.</span> <span class="yl">Starting now.</span></h2>
         <p>We’ll take an honest look at your site and tell you straight: can we really move the needle for you, what would that look like, and what return could you expect? If we can’t help, we’ll say so. No BS, no pitch deck, no pressure.</p>
       </div>
-      <!-- Without JavaScript, or until a form service is connected (data-endpoint), the form opens the visitor's email app. -->
+      <!-- Submissions go to Web3Forms, which emails them to igor@buyseech.com. -->
       <div class="form-col reveal">
-      <form id="review-form" class="form" action="mailto:igor@buyseech.com?subject=Site%20review%20request" method="post" enctype="text/plain" data-endpoint="">
+      <form id="review-form" class="form" action="https://api.web3forms.com/submit" method="post" data-endpoint="https://api.web3forms.com/submit">
+        <input type="hidden" name="access_key" value="5e293519-b2df-49e3-8759-4dc8aeafb958">
+        <input type="hidden" name="subject" value="New lead from buyseech.com">
+        <input type="hidden" name="from_name" value="Buyseech.com contact form">
         <label>Name
           <input type="text" name="name" placeholder="Your name" autocomplete="name" required>
         </label>
@@ -439,6 +442,6 @@
   </div>
 </footer>
 
-<script src="site.js?v=4.3" defer></script>
+<script src="site.js?v=4.4" defer></script>
 </body>
 </html>
