@@ -128,23 +128,3 @@
   window.addEventListener('resize', function () { if (window.innerWidth > 900) set(false); });
 })();
 
-// Cookie banner (Google Consent Mode v2). Choice is remembered; "Cookie settings" in the footer reopens it.
-(function () {
-  var banner = document.getElementById('cookie-banner');
-  if (!banner) return;
-  var KEY = 'bs-consent';
-  function get() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
-  function set(v) { try { localStorage.setItem(KEY, v); } catch (e) {} }
-  if (!get()) banner.hidden = false;
-  banner.addEventListener('click', function (e) {
-    var b = e.target.closest('[data-consent]');
-    if (!b) return;
-    var v = b.getAttribute('data-consent');
-    set(v);
-    if (typeof gtag === 'function') gtag('consent', 'update', { analytics_storage: v });
-    banner.hidden = true;
-  });
-  document.querySelectorAll('[data-cookie-settings]').forEach(function (el) {
-    el.addEventListener('click', function () { banner.hidden = false; });
-  });
-})();
