@@ -1,0 +1,27 @@
+# Old WordPress pages (from Search Console, last 12 months) -> new one-page site
+/bazooka-seo/ / 301
+/bazooka-seo / 301
+/about-us/ / 301
+/about-us / 301
+/contact/ / 301
+/contact / 301
+/local-seo-services/ / 301
+/local-seo-services / 301
+/nationwide-seo/ / 301
+/nationwide-seo / 301
+/blog/ / 301
+/blog / 301
+/international-seo/ / 301
+/international-seo / 301
+/privacy-policy/ / 301
+/privacy-policy / 301
+/sitemap/ / 301
+/sitemap / 301
+/online-reputation-management/ / 301
+/online-reputation-management / 301
+/blog/* / 301
+/category/* / 301
+/sitemap_index.xml /sitemap.xml 301
+/wp-sitemap.xml /sitemap.xml 301
+/page-sitemap.xml /sitemap.xml 301
+/post-sitemap.xml /sitemap.xml 301
