@@ -12,3 +12,6 @@
 
 /checklist/
   X-Robots-Tag: noindex, nofollow
+
+/assets/pdf/*
+  X-Robots-Tag: noindex, nofollow
